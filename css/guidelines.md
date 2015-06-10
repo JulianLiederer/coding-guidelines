@@ -37,6 +37,12 @@ Remove trailing whitespace (i.e. tell your text editor to do so automatically). 
 - Place the closing brace of a ruleset in the same column as the first character of the ruleset.
 - Separate each ruleset by a blank line.
 
+## Special Characters
+When using unicode character codes, please declare the character itself and a description in a comment on the same line:
+```sass
+content: "\203A" // › = single right-pointing angle quotation mark
+```
+
 ## Declaration order
 Declarations should be alphabetically ordered.
 
