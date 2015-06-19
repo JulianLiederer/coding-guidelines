@@ -5,6 +5,16 @@ Please read and adhere to [PEP 8](http://legacy.python.org/dev/peps/pep-0008/).
 The following additional guidelines are structured according to the original
 PEP 8 document.
 
+## Indentation
+
+Use hanging indents whenever possible.
+
+```Python
+foo = long_function_name(
+    var_one, var_two,
+    var_three, var_four)
+```
+
 ## Maximum Line Length
 
 Avoid breaking long lines using backslashes. Instead, use brackets.
