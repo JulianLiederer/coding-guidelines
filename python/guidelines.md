@@ -21,9 +21,10 @@ Avoid breaking long lines using backslashes. Instead, use brackets.
 Note, that Python implicitly joins strings that are contained in brackets.
 
 ```Python
-assert ('<html><body><div><h1>{{ title }}</h1>'
-        '<div class="container">{{ content }}</div>'
-        '</div></body></html>') in foo.contents
+assert (
+    '<html><body><div><h1>{{ title }}</h1>'
+    '<div class="container">{{ content }}</div>'
+    '</div></body></html>') in foo.contents
 ```
 
 ## Imports
