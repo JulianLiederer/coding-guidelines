@@ -5,6 +5,7 @@
 .. toctree::
     :maxdepth: 2
 
-    overview
-    onboarding
-    operations
+    css/guidelines
+    jinja/guidelines
+    js/guidelines
+    python/guidelines

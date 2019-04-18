@@ -1,5 +1,0 @@
-=====================
-Entwickler-Onboarding
-=====================
-
-XXX writeme
