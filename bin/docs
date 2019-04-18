@@ -21,11 +21,12 @@ case $COMMAND in
         make -C htdocs all-pdf
     ;;
     elasticsearch)
-        pipenv run sphinx-build -b json . htdocs/json
-        pipenv run sphinx-elasticsearch index \
-            --es-url=https://docs.zeit.de:443/elasticsearch/ \
-            --commit=$(git show --no-patch --pretty=format:%H) \
-            --project-name=@@PROJECT-SLUG@@ htdocs/json
+        echo "Temporarily disabled due to bug (TypeError: delete_by_query() got an unexpected keyword argument 'doc_type')"
+        # pipenv run sphinx-build -b json . htdocs/json
+        # pipenv run sphinx-elasticsearch index \
+        #     --es-url=https://docs.zeit.de:443/elasticsearch/ \
+        #     --commit=$(git show --no-patch --pretty=format:%H) \
+        #     --project-name=@@PROJECT-SLUG@@ htdocs/json
     ;;
     *)
         echo "Unrecognized command: $COMMAND"
